@@ -1,0 +1,295 @@
+.StarterContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.hideStarter {
+    transform: translateX(-100%);
+    -webkit-transition: transform .5s cubic-bezier(.5, 0, .3, 1) 750ms;
+    -moz-transition: transform .5s cubic-bezier(.5, 0, .3, 1) 750ms;
+    -ms-transition: transform .5s cubic-bezier(.5, 0, .3, 1) 750ms;
+    -o-transition: transform .5s cubic-bezier(.5, 0, .3, 1) 750ms;
+    transition: transform .5s cubic-bezier(.5, 0, .3, 1) 750ms;
+
+}
+
+.imageContainer {
+    width: 50%;
+    background-image: url("StartedBackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-box-shadow: 2px 0 10px #dedede;
+    box-shadow: 2px 0 10px #dedede;
+}
+
+.slideimg {
+    width: 100%;
+    -webkit-transition: all 750ms cubic-bezier(.5, 0, .3, 1);
+    -moz-transition: all 750ms cubic-bezier(.5, 0, .3, 1);
+    -ms-transition: all 750ms cubic-bezier(.5, 0, .3, 1);
+    -o-transition: all 750ms cubic-bezier(.5, 0, .3, 1);
+    transition: all 750ms cubic-bezier(.5, 0, .3, 1);
+}
+
+.introContainer {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    overflow: hidden;
+
+}
+
+.closeIntro {
+    width: 0;
+    opacity: 0;
+    -webkit-transition: opacity 350ms ease-out, width 750ms cubic-bezier(.5, 0, .3, 1);
+    -moz-transition: opacity 350ms ease-out, width 750ms cubic-bezier(.5, 0, .3, 1);
+    -ms-transition: opacity 350ms ease-out, width 750ms cubic-bezier(.5, 0, .3, 1);
+    -o-transition: opacity 350ms ease-out, width 750ms cubic-bezier(.5, 0, .3, 1);
+    transition: opacity 350ms ease-out, width 750ms cubic-bezier(.5, 0, .3, 1);
+
+}
+
+.bowlingBall {
+    position: relative;
+    right: 90px;
+    top: 74px;
+    z-index: -1;
+    width: 80px;
+    -webkit-box-shadow: 0 0 13px #8e8e8e5c;
+    box-shadow: 0 0 13px #8e8e8e5c;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #D0150F;
+
+}
+
+.introContainer .title {
+
+    font-size: 57px;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    font-family: Franklin Gothic Medium, sans-serif;
+    text-align: center;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.introContainer .title span:first-child {
+    font-size: 57px;
+    color: white;
+    text-shadow: 0 1px 3px #00000029;
+}
+
+.introContainer .title span:last-child {
+    font-size: 25px
+}
+
+.introContainer .introduction {
+    font-family: monospace;
+    font-size: 15px;
+    padding: 3% 23%;
+    text-align: center;
+    line-height: 22px;
+    color: #706f6f;
+}
+
+.introContainer button {
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    background: transparent;
+    color: #d0150f;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: monospace;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 12px;
+    height: 45px;
+    transition: all 350ms ease-in-out;
+
+}
+
+.introContainer button:hover {
+    background: #d0150f;
+    color: white;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px 0 #0000006b;
+    box-shadow: 0 1px 2px 0 #0000006b;
+
+    transition: all 350ms ease-in-out;
+}
+
+.container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+.headerTitle {
+    font-size: 80px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    font-family: Franklin Gothic Medium, sans-serif;
+}
+
+.headerTitle span:first-child {
+    color: white;
+    text-shadow: 0 1px 3px #00000029;
+}
+
+.headerContainer .bowlingBall {
+    position: relative;
+    left: 96px;
+    top: -15px;
+    z-index: -9;
+    width: 100px;
+    box-shadow: 0 0 13px #8e8e8e5c;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #D0150F;
+}
+
+
+.RollsContainer {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 22px;
+}
+
+.RollsContainer .rolls button {
+    margin: 11px;
+    border: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px 0 #0000006b;
+    box-shadow: 0 1px 2px 0 #0000006b;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+}
+
+.RollsContainer button:active {
+    -webkit-box-shadow: inset 0 0 4px #e1e1e1;
+    box-shadow: inset 0 0 4px #e1e1e1;
+
+}
+
+.ResetButton button {
+    border: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px 0 #0000006b;
+    box-shadow: 0 1px 2px 0 #0000006b;
+    cursor: pointer;
+    padding: 12px;
+    height: 40px;
+    font-size: 17px;
+    background: #F0003C;
+    color: white;
+    white-space: nowrap;
+
+}
+
+.frameContainer {
+    width: 85%;
+    display: flex;
+    margin-bottom: 70px;
+    -webkit-box-shadow: 0 1px 4px rgba(153, 153, 153, 0.2);
+    box-shadow: 0 1px 4px rgba(153, 153, 153, 0.2);
+}
+
+.frame {
+    width: 112px;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame:not(:last-child) {
+    border-right: none;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.frame_title {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #3A3A3A;
+    color: white;
+}
+
+.box {
+    flex: 1;
+    text-align: center;
+    height: 25px;
+    padding: 6px;
+}
+
+.right {
+    border: solid #bfbebe;
+    border-width: 0 0 1px 1px;
+}
+
+.last {
+    border: solid #bfbebe;
+    border-width: 0 0 1px 1px;
+}
+
+
+.dataBox {
+    border-right: 1px solid #ddd;
+}
+
+
+.GameOverTitle {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    font-family: Franklin Gothic Medium, sans-serif;
+    text-align: center;
+}
+
+.totalScoreTitle {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    font-family: Franklin Gothic Medium, sans-serif;
+    text-align: center;
+}
+
+.totalScoreTitle span {
+    color: #F0003C;
+}
+
